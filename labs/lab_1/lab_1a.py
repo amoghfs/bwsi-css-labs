@@ -9,7 +9,7 @@ def main():
     print("Hello World!")
 
     name = "Amogh Gurlahosur" # TODO: Insert your name between the double quotes
-
+    robot_speed = 5 #m/s
     print(f"{name}, Welcome to the CSS course!")
     print(f"Hi everyone! My name is {name}, and I am a junior at Archbishop Mitty High School in San Jose, California. I'm interested in machine learning and its applications in aerospace systems. I also enjoy programming and solving problems. A fun fact about me is I enjoy playing chess in my free time.")
 
