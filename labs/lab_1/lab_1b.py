@@ -51,9 +51,14 @@ def main():
     # Ask the user for sample input    
     num1 = user_input("Enter the first number: ")
     num2 = user_input("Enter the second number: ")
-    operation = input("Enter the operation (add, subtract, divide, multiply): ")  
-    # Perform the calculation and display the result
-    result = simple_calculator(operation, num1, num2)
+    while True:
+        try:
+            operation = input("Enter the operation (add, subtract, divide, multiply): ")  
+            # Perform the calculation and display the result
+            result = simple_calculator(operation, num1, num2)
+            break
+        except ValueError:
+            print("Invalid operation, please try again.")
     print(f"The result of {operation}ing {num1} and {num2} is: {result}")
 
 
